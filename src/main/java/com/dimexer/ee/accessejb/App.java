@@ -14,8 +14,8 @@ public class App {
 			jndiProps.put(Context.INITIAL_CONTEXT_FACTORY,
 					"org.jboss.naming.remote.client.InitialContextFactory");
 			jndiProps.put(Context.PROVIDER_URL, "remote://127.0.0.1:4447");
-			jndiProps.put(Context.SECURITY_PRINCIPAL, "username");
-			jndiProps.put(Context.SECURITY_CREDENTIALS, "password");
+			jndiProps.put(Context.SECURITY_PRINCIPAL, "dimo");
+			jndiProps.put(Context.SECURITY_CREDENTIALS, "901102");
 			jndiProps.put("jboss.naming.client.ejb.context", "true");
 			Context ic = new InitialContext(jndiProps);
 			HelloEJB he = (HelloEJB) ic
